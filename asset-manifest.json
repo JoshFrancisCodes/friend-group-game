@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/friend-group-game/static/css/main.48ffc29d.css",
-    "main.js": "/friend-group-game/static/js/main.8a4f037d.js",
+    "main.js": "/friend-group-game/static/js/main.86eee272.js",
     "index.html": "/friend-group-game/index.html",
     "main.48ffc29d.css.map": "/friend-group-game/static/css/main.48ffc29d.css.map",
-    "main.8a4f037d.js.map": "/friend-group-game/static/js/main.8a4f037d.js.map"
+    "main.86eee272.js.map": "/friend-group-game/static/js/main.86eee272.js.map"
   },
   "entrypoints": [
     "static/css/main.48ffc29d.css",
-    "static/js/main.8a4f037d.js"
+    "static/js/main.86eee272.js"
   ]
 }
