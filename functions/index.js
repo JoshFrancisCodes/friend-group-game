@@ -24,6 +24,20 @@ admin.initializeApp();
 
 const firestore = admin.firestore();
 
+function generateRoomCode() {
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'; // Allowed characters for the room code
+    const codeLength = 6; // Length of the room code
+  
+    let roomCode = '';
+    for (let i = 0; i < codeLength; i++) {
+      const randomIndex = Math.floor(Math.random() * characters.length);
+      roomCode += characters[randomIndex];
+    }
+  
+    return roomCode;
+}
+  
+
 // Create a group
 exports.createGroup = functions.https.onCall(async (data, context) => {
   // Check if the user is authenticated
@@ -49,6 +63,8 @@ exports.createGroup = functions.https.onCall(async (data, context) => {
   // Return the room code to the group creator
   return { roomCode };
 });
+
+
 
 // Join a group
 exports.joinGroup = functions.https.onCall(async (data, context) => {

@@ -1,0 +1,41 @@
+.canvas {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .nodes {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  
+  .node {
+    padding: 5px;
+    background-color: lightblue;
+    margin-bottom: 5px;
+  }
+  
+  .edges {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .edge {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .node-label {
+    display: inline-block;
+    background-color: lightblue;
+    padding: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  .selected {
+    background-color: #2900de;
+    color: white;
+  }
+  
